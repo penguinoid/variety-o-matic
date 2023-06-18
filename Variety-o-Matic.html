@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<title>Variety-o-Matic</title>
+		<style>
+			button.selected {
+				color: #00FF00
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1>Variation-o-Matic</h1>
+		
+		<div id="tagFilters"></div>
+		
+    <div>
+        <div id="variety-1-PAF" class="variety" tags="100-hand-lettered,300-sawyers,350-portland-ore,400-made-in-usa,600-no-date,660-no-copyright">
+            <h2>Variety 1 PAF</h2>
+            <img src="img/type1paf.jpg" />
+            <p>
+                Easy to recognize. The only circular printed variety.
+                Common on older reels. The only variety on 'Gold foil' reel styles.
+                There is a small difference between 2 circular printed varieties. This is the early variety with 'PAT. APPLIED FOR'.
+                Common
+            </p>
+        </div>
+        <div id="variety-1-P" class="variety" tags="100-hand-lettered,300-sawyers,350-portland-ore,400-made-in-usa,600-no-date,660-no-copyright">
+            <h2>Variety 1 P</h2>
+            <img src="img/type1.jpg" />
+            <p>
+                Easy to recognize. The only circular printed variety.
+                Common on older reels. The only variety on 'Gold foil' reel styles.
+                There is a small difference between 2 circular printed varieties. This is the later variety with 'PATENTED' beneath the center hole.
+                Common
+            </p>
+        </div>
+        <div id="variety-2" class="variety" tags="010-2-lines-left,050-3-lines-right,100-hand-lettered,300-sawyers,320-sawyers-italics,350-portland-ore,400-made-in-usa,600-no-date,660-no-copyright">
+            <h2>Variety 2</h2>
+            <img src="img/type2.jpg" />
+            <p>
+                'Sawyers' in italics left from center.
+                'REEL NO.' printed above reel number on top.
+                Three lines right from center.
+                Fairly common
+            </p>
+        </div>
+        <div id="variety-3" class="variety" tags="010-2-lines-left,060-4-lines-right,100-hand-lettered,300-sawyers,350-portland-ore,400-made-in-usa,600-no-date,660-no-copyright">
+            <h2>Variety 3</h2>
+            <img src="img/type3.jpg" />
+            <p>
+                'Sawyer's' in normal print left from center.
+                'REEL NO' printed above reel number on top.
+                Four lines right from center.
+                Common
+            </p>
+        </div>
+        <div id="variety-4" class="variety" tags="010-2-lines-left,060-4-lines-right,100-hand-lettered,300-sawyers,350-portland-ore,400-made-in-usa,600-no-date,660-no-copyright">
+            <h2>Variety 4</h2>
+            <img src="img/type4.jpg" />
+            <p>
+                'Sawyer's' in normal print left from center.
+                'NO.' printed left from reel number.
+                Reel number within the reel title on top right.
+                Scarce
+            </p>
+        </div>
+        <div id="variety-5" class="variety" tags="010-2-lines-left,060-4-lines-right,100-hand-lettered,300-sawyers,350-portland-ore,400-made-in-usa,600-no-date,660-no-copyright,720-study-reel">
+            <h2>Variety 5</h2>
+            <img src="img/type5.jpg" />
+            <p>
+                'SAWYER'S PORTLAND, ORE.' on top of center.
+                Variety issued by the U.S. government.
+                Rare
+                Varieties 6,7 and 8 are similar.
+            </p>
+        </div>
+        <div id="variety-9" class="variety" tags="010-2-lines-left,060-4-lines-right,100-hand-lettered,300-sawyers,350-portland-ore,400-made-in-usa,600-no-date,660-no-copyright">
+            <h2>Variety 9</h2>
+            <img src="img/type9.jpg" />
+            <p>
+                Two lines left of the center.
+                Number in the middle on top of center.
+            </p>
+        </div>
+        <div id="variety-10" class="variety" tags="010-2-lines-left,060-4-lines-right,100-hand-lettered,300-sawyers,70-portland-oregon,400-made-in-usa,600-no-date,660-no-copyright">
+            <h2>Variety 10</h2>
+            <img src="img/type10.jpg" />
+            <p>
+                Three lines left of the center.
+                Second line not indented reads 'PORTLAND, OREGON'
+                Line three indented.
+                Rare
+            </p>
+        </div>
+        <div id="variety-11" class="variety" tags="hand-lettered,portland,sawyers-left,4-lines-right,3-lines-left,prefixed-no">
+            <h2>Variety 11</h2>
+            <img src="img/type11.jpg" />
+            <p>
+                Three lines left of the center.
+                Line two and three indented.
+                'NO.' before reel number in the middle on top.
+
+                Less common
+            </p>
+        </div>
+        <div id="variety-12" class="variety" tags="hand-lettered,portland,sawyers-left,4-lines-right,3-lines-left">
+            <h2>Variety 12</h2>
+            <img src="img/type12.jpg" />
+            <p>
+                Three lines left of the center.
+                Line two and three indented. Similar to variety 11 but no 'NO.' preceding the reel number.
+                Fairly common
+            </p>
+        </div>
+        <div id="variety-13" class="variety" tags="hand-lettered,portland,sawyers-left,4-lines-right,3-lines-left,date,copyright-symbol,sawyers-bottom,sawyers-italics">
+            <h2>Variety 13</h2>
+            <img src="img/type13.jpg" />
+            <p>
+                Similar to variety 12.
+                '© Sawyer's' and copyright year at bottom
+                First variety with a copyright year.
+                Less common
+            </p>
+        </div>
+        <div id="variety-14" class="variety" tags="hand-lettered,portland,sawyers-left,4-lines-right,3-lines-left">
+            <h2>Variety 14</h2>
+            <img src="img/type14.jpg" />
+            <p>
+                Three lines left of the center.
+                All three are left aligned.
+                Common
+            </p>
+        </div>
+        <div id="variety-15" class="variety" tags="hand-lettered,portland,sawyers-left,4-lines-right,3-lines-left,copyright-symbol,sawyers-bottom">
+            <h2>Variety 15</h2>
+            <img src="img/type15.jpg" />
+            <p>
+                Similar to variety 14
+                with '© Sawyers' bottom
+                Scarce
+            </p>
+        </div>
+        <div id="variety-16" class="variety" tags="hand-lettered,portland,sawyers-left,4-lines-right,3-lines-left,copyright-symbol,sawyers-bottom,sawyers-italics,date">
+            <h2>Variety 16</h2>
+            <img src="img/type16.jpg" />
+            <p>
+                Similar to variety 14
+                with '© Sawyer's' and copyright year
+                in script at bottom
+                Scarce
+            </p>
+        </div>
+        <div id="variety-17" class="variety" tags="hand-lettered,portland,sawyers-left,4-lines-right,3-lines-left,copyright-symbol,sawyers-inc-bottom,sawyers-italics,date">
+            <h2>Variety 17</h2>
+            <img src="img/type17.jpg" />
+            <p>
+                Similar to variety 14
+                with '© Sawyer's Inc.' and copyright year
+                in script at bottom
+                Scarce
+            </p>
+        </div>
+        <div id="variety-18" class="variety" tags="hand-lettered,portland,sawyers-inc-left,4-lines-right,3-lines-left">
+            <h2>Variety 18</h2>
+            <img src="img/type18.jpg" />
+            <p>
+                Similar to variety 12
+                Three lines left of the center.
+                Line two and three indented.
+                On first line 'Sawyer's Inc.'
+                Scarce
+            </p>
+        </div>
+        <div id="variety-19" class="variety" tags="typeset,portland,sawyers-inc-left,4-lines-right,3-lines-left">
+            <h2>Variety 19</h2>
+            <img src="img/type19.jpg" />
+            <p>
+                Three lines left of the center.
+                On first line 'Sawyer's Inc.'
+                Line two and three indented.
+                First typeset variety.
+                Common
+            </p>
+        </div>
+        <div id="variety-20" class="variety" tags="typeset,portland,sawyers-inc-left,4-lines-right,3-lines-left,date">
+            <h2>Variety 20</h2>
+            <img src="img/type20.jpg" />
+            <p>
+                Similar to variety 19
+                Copyright year at bottom
+
+                Less common
+            </p>
+        </div>
+        <div id="variety-21" class="variety" tags="typeset,portland,sawyers-inc-left,4-lines-right,3-lines-left,sawyers-inc-bottom">
+            <h2>Variety 21</h2>
+            <img src="img/type21.jpg" />
+            <p>
+                Similar to variety 19
+                'Sawyer's, Inc.' at bottom
+                Less common
+            </p>
+        </div>
+        <div id="variety-21a" class="variety" tags="typeset,portland,sawyers-inc-left,4-lines-right,3-lines-left,sawyers-inc-bottom,date">
+            <h2>Variety 21a</h2>
+            <img src="img/type21a.jpg" />
+            <p>
+                Similar to variety 19
+                'Sawyer's, Inc.' and copyright year at bottom
+                Rare
+            </p>
+        </div>
+        <div id="variety-22" class="variety" tags="typeset,portland-ore-left,sawyers-inc-left,4-lines-right,3-lines-left,sawyers-inc-bottom,portland-bottom">
+            <h2>Variety 22</h2>
+            <img src="img/type22.jpg" />
+            <p>
+                Similar to variety 19
+                'Sawyer's, Inc.' and below that
+                'Portland 7,Oregon' at bottom
+                Scarce
+            </p>
+        </div>
+    </div>
+    
+    <span id="data">
+        Reel No.,Name,Reels,Location,Tags,Year,Estimated Year,Sleeve,Booklet,Red,Packaging,Notes,Duplicate
+        [NSA],Historic Charleston Stereographs from the Civil War Era,1,"USA,SC","History,NSA",2003,,checked,,,Card Packet,,
+        [NSA],39th NSA Convention 3D-Con,1,"USA,MI",NSA,201333,,checked,,,Card Packet,,
+        [NSA],3D-Con 2019 Akron Ohio,1,"USA,OH",NSA,2019,,checked,,,Card Packet,,
+        [NSA],Atlanta International 3-D Festival '95,3,"USA,GA",NSA,1995,,checked,checked,,3D Book,,
+    </span>
+
+    </body>
+</html>
+
+<script type="text/javascript">	
+	//var allTags = $('div.tags').InnerText;
+	var allTags = [];
+	var filters = [];
+	$('div.variety').each(function(){
+		var tags = $(this).attr('tags').split(',');
+		//console.log(tags);
+		tags.forEach(tag => {
+			if(!allTags.includes(tag)){
+				allTags.push(tag);
+			}
+		});
+	});
+	console.log(allTags);
+	allTags.forEach(tag => {
+		$('#tagFilters').append('<button id="' + tag + '" onclick="ApplyFilter(\'' + tag + '\')">' + tag.replaceAll("-", " ") + '</button>');
+	});
+	
+	function ApplyFilter(tag){
+		if($("#" + tag).hasClass('selected')){
+			$("#" + tag).removeClass('selected');
+			filters.splice( $.inArray(tag, filters), 1 );
+		} else {
+			$("#" + tag).addClass('selected');
+			filters.push(tag);
+		}
+		console.log(filters);
+		
+		$('div.variety').each(function(){
+			var show = true;
+			var tags = $(this).attr('tags').split(',');
+			filters.forEach(filter => {
+				if(!tags.includes(filter)){
+					show = false;
+					return false;
+				}
+			});
+			
+			if(show){
+				$(this).show();
+			} else {
+				$(this).hide();
+			}
+		});
+	}
+
+</script>
