@@ -1,0 +1,227 @@
+[
+  {
+    "Group": "Lines by centre hole",
+    "Filters": [
+      {
+        "Code": "2-lines-left",
+        "DisplayName": "2 lines left"
+      },
+      {
+        "Code": "3-lines-left",
+        "DisplayName": "3 lines left"
+      },
+      {
+        "Code": "4-lines-left",
+        "DisplayName": "4 lines left"
+      },
+      {
+        "Code": "2-lines-right",
+        "DisplayName": "2 lines right"
+      },
+      {
+        "Code": "3-lines-right",
+        "DisplayName": "3 lines right"
+      },
+      {
+        "Code": "4-lines-right",
+        "DisplayName": "4 lines right"
+      }
+    ]
+  },
+  {
+    "Group": "Lettering style",
+    "Filters": [
+      {
+        "Code": "hand-lettered",
+        "DisplayName": "hand-lettered"
+      },
+      {
+        "Code": "typeset",
+        "DisplayName": "typeset"
+      }
+    ]
+  },
+  {
+    "Group": "Reel number position",
+    "Filters": [
+      {
+        "Code": "reel-number-at-top",
+        "DisplayName": "reel number at top"
+      },
+      {
+        "Code": "reel-number-at-bottom",
+        "DisplayName": "reel number at bottom"
+      }
+    ]
+  },
+  {
+    "Group": "Company and location",
+    "Filters": [
+      {
+        "Code": "sawyers",
+        "DisplayName": "Swayers"
+      },
+      {
+        "Code": "sawyers-inc",
+        "DisplayName": "Sawyers Inc"
+      },
+      {
+        "Code": "sawyers-italics",
+        "DisplayName": "Sawyers in italics"
+      },
+      {
+        "Code": "gaf",
+        "DisplayName": "gaf"
+      },
+      {
+        "Code": "gaf-corporation",
+        "DisplayName": "gaf Corporation"
+      },
+      {
+        "Code": "portland-ore",
+        "DisplayName": "Portland Ore"
+      },
+      {
+        "Code": "portland-7-oregon",
+        "DisplayName": "Portland 7 Oregon"
+      },
+      {
+        "Code": "portland-oregon",
+        "DisplayName": "Portland Oregon"
+      },
+      {
+        "Code": "usa",
+        "DisplayName": "USA"
+      }
+    ]
+  },
+  {
+    "Group": "Made in...",
+    "Filters": [
+      {
+        "Code": "made-in-usa",
+        "DisplayName": "made in USA"
+      },
+      {
+        "Code": "made-in-belgium",
+        "DisplayName": "made in Belgium"
+      },
+      {
+        "Code": "made-in-australia",
+        "DisplayName": "made in Australia"
+      },
+      {
+        "Code": "made-in-france",
+        "DisplayName": "made in France"
+      },
+      {
+        "Code": "made-in-india",
+        "DisplayName": "made in India"
+      }
+    ]
+  },
+  {
+    "Group": "View-Master",
+    "Filters": [
+      {
+        "Code": "view-master-reel",
+        "DisplayName": "View-Master Reel"
+      },
+      {
+        "Code": "view-master-stereo-reel",
+        "DisplayName": "View-Master Stereo Reel"
+      },
+      {
+        "Code": "3d-view-master-logo",
+        "DisplayName": "3D View-Master logo"
+      }
+    ]
+  },
+  {
+    "Group": "Date and copyright",
+    "Filters": [
+      {
+        "Code": "no-date",
+        "DisplayName": "no date"
+      },
+      {
+        "Code": "date",
+        "DisplayName": "date"
+      },
+      {
+        "Code": "multiple-dates",
+        "DisplayName": "multiple dates"
+      },
+      {
+        "Code": "date-roman",
+        "DisplayName": "date in roman numerals"
+      },
+      {
+        "Code": "copyright-symbol",
+        "DisplayName": "©"
+      },
+      {
+        "Code": "copyright-text",
+        "DisplayName": "copyright"
+      },
+      {
+        "Code": "by-line",
+        "DisplayName": "by line"
+      },
+      {
+        "Code": "all-rights-reserved",
+        "DisplayName": "all rights reserved"
+      },
+      {
+        "Code": "reserved",
+        "DisplayName": "reserved"
+      },
+      {
+        "Code": "company-name",
+        "DisplayName": "company name"
+      }
+    ]
+  },
+  {
+    "Group": "Reel type",
+    "Filters": [
+      {
+        "Code": "preview-reel",
+        "DisplayName": "preview reel"
+      },
+      {
+        "Code": "study-reel",
+        "DisplayName": "study reel"
+      },
+      {
+        "Code": "test-reel",
+        "DisplayName": "test reel"
+      },
+      {
+        "Code": "proof-reel",
+        "DisplayName": "proof reel"
+      },
+      {
+        "Code": "personal-reel",
+        "DisplayName": "personal reel"
+      }
+    ]
+  },
+  {
+    "Group": "Misc",
+    "Filters": [
+      {
+        "Code": "non-stereo",
+        "DisplayName": "non stereo"
+      },
+      {
+        "Code": "up-for-viewer",
+        "DisplayName": "up for viewer"
+      },
+      {
+        "Code": "heptagon",
+        "DisplayName": "heptagon"
+      }
+    ]
+  }
+]
