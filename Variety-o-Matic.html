@@ -2,10 +2,54 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <title>Variety-o-Matic</title>
     <style>
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 50px;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        div.grid-item {
+            width: 20%;
+        }
+
+        div.filter {
+            position: relative;
+            width: 200px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 3px;
+            text-align: center;
+        }
+
+        div.variety {
+            position: relative;
+            min-height: 500px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 3px;
+        }
         button.selected {
-            color: #00FF00
+            border-color: #00ff00;
+            color: #00FF00;
+            background-color: black;
+        }
+
+        button.filter {
+            margin: 2px;
         }
     </style>
     <script type="application/json" id="filterData">
@@ -17,57 +61,64 @@
 </head>
 <body>
 
-    <h1>Variation-o-Matic</h1>
+    <h1>Variety-o-Matic</h1>
 
-    <div id="filters"></div>
+    <div id="filters" class="grid"></div>
 
-    <div id="varieties"></div>
+    <div id="varieties" class="grid"></div>
 
 </body>
 </html>
 
-<script type="text/javascript">	
+<script type="text/javascript">
 
     BuildFilters();
     BuildVarieties();
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 20
+    });
 
     var filters = [];
 
-    function ApplyFilter(tag){
-        if($("#" + tag).hasClass('selected')){
+    function ApplyFilter(tag) {
+        if ($("#" + tag).hasClass('selected')) {
             $("#" + tag).removeClass('selected');
-            filters.splice( $.inArray(tag, filters), 1 );
+            filters.splice($.inArray(tag, filters), 1);
         } else {
             $("#" + tag).addClass('selected');
             filters.push(tag);
         }
-        console.log(filters);
-		
-        $('div.variety').each(function(){
+
+        $('div.variety').each(function() {
             var show = true;
             var tags = $(this).attr('tags').split(',');
             filters.forEach(filter => {
-                if(!tags.includes(filter)){
+                if (!tags.includes(filter)) {
                     show = false;
                     return false;
                 }
             });
-			
-            if(show){
+
+            if (show) {
                 $(this).show();
             } else {
                 $(this).hide();
             }
         });
+
+        $('.grid').masonry('layout');
     }
 
     function BuildFilters() {
         var data = JSON.parse(document.getElementById('filterData').innerHTML);
         data.forEach(group => {
-            $('#filters').append('<h2>' + group.Group + '</h2>');
+            var div = $('<div class="grid-item filter">');
+            div.append('<h2>' + group.Group + '</h2>');
             group.Filters.forEach(filter => {
-                $('#filters').append('<button id="' + filter.Code + '" onclick="ApplyFilter(\'' + filter.Code + '\')">' + filter.DisplayName + '</button>');
+                div.append('<button id="' + filter.Code + '" class="filter" onclick="ApplyFilter(\'' + filter.Code + '\')">' + filter.DisplayName + '</button>');
             });
+            $('#filters').append(div);
         });
     }
 
@@ -81,11 +132,11 @@
 
     function VarietyHtml(variety) {
         var template =
-            '<div class="variety" tags="_TAGS_">' +
-            '<h2>Variety _NAME_</h2>' +
-            '<img src="img/_IMAGE_" />' +
-            '<p>_DESCRIPTION_</p> ' +
-            '</div>';
+            '<div class="grid-item variety" tags="_TAGS_">' +
+                '<img src="img/_IMAGE_" />' +
+                '<h2>Variety _NAME_</h2>' +
+                '<p>_DESCRIPTION_</p> ' +
+                '</div>';
 
         return template.replace('_TAGS_', variety.Tags)
             .replace('_NAME_', variety.Name)
