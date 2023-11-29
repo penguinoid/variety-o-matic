@@ -42,6 +42,7 @@
             margin: 2px;
             padding: 3px;
         }
+
         button.selected {
             border-color: #00ff00;
             color: #00FF00;
@@ -50,6 +51,12 @@
 
         button.filter {
             margin: 2px;
+        }
+
+        button.clear-filters {
+            border-color: black;
+            color: black;
+            background-color: #00ff00;
         }
     </style>
     <script type="application/json" id="filterData">
@@ -110,6 +117,14 @@
         $('.grid').masonry('layout');
     }
 
+    function ClearFilters(){
+        filters = [];
+        $('div.variety').each(function() {
+            $(this).show();
+        });
+        $('.grid').masonry('layout');
+    }
+
     function BuildFilters() {
         var data = JSON.parse(document.getElementById('filterData').innerHTML);
         data.forEach(group => {
@@ -120,6 +135,8 @@
             });
             $('#filters').append(div);
         });
+        var clearFiltersButton = $('<div class="grid-item filter"><button class="clear-filters" onclick="ClearFilters()">Clear Filters</button></div>');
+        $('#filters').append(clearFiltersButton);
     }
 
     function BuildVarieties() {

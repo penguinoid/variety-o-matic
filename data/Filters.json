@@ -3,7 +3,7 @@
     "Group": "Lines by centre hole",
     "Filters": [
       {
-        "Code": "0-lines-left",
+        "Code": "no-lines-left",
         "DisplayName": "no lines left"
       },
       {
@@ -23,7 +23,7 @@
         "DisplayName": "4 lines left"
       },
       {
-        "Code": "0-lines-right",
+        "Code": "no-lines-right",
         "DisplayName": "no lines right"
       },
       {
@@ -75,7 +75,7 @@
     "Filters": [
       {
         "Code": "sawyers",
-        "DisplayName": "Swayers"
+        "DisplayName": "Sawyers"
       },
       {
         "Code": "sawyers-inc",
