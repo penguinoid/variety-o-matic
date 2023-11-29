@@ -3,6 +3,14 @@
     "Group": "Lines by centre hole",
     "Filters": [
       {
+        "Code": "0-lines-left",
+        "DisplayName": "no lines left"
+      },
+      {
+        "Code": "1-line-left",
+        "DisplayName": "1 line left"
+      },
+      {
         "Code": "2-lines-left",
         "DisplayName": "2 lines left"
       },
@@ -13,6 +21,14 @@
       {
         "Code": "4-lines-left",
         "DisplayName": "4 lines left"
+      },
+      {
+        "Code": "0-lines-right",
+        "DisplayName": "no lines right"
+      },
+      {
+        "Code": "1-line-right",
+        "DisplayName": "1 line right"
       },
       {
         "Code": "2-lines-right",
@@ -78,6 +94,10 @@
         "DisplayName": "gaf Corporation"
       },
       {
+        "Code": "view-master-international",
+        "DisplayName": "View-Master International"
+      },
+      {
         "Code": "portland-ore",
         "DisplayName": "Portland Ore"
       },
@@ -88,6 +108,10 @@
       {
         "Code": "portland-oregon",
         "DisplayName": "Portland Oregon"
+      },
+      {
+        "Code": "new-york",
+        "DisplayName": "New York"
       },
       {
         "Code": "usa",
@@ -124,12 +148,20 @@
     "Group": "View-Master",
     "Filters": [
       {
+        "Code": "view-master",
+        "DisplayName": "View-Master"
+      },
+      {
         "Code": "view-master-reel",
         "DisplayName": "View-Master Reel"
       },
       {
-        "Code": "view-master-stereo-reel",
-        "DisplayName": "View-Master Stereo Reel"
+        "Code": "view-master-disco",
+        "DisplayName": "View-Master Disco"
+      },
+      {
+        "Code": "stereo-reel",
+        "DisplayName": "Stereo Reel"
       },
       {
         "Code": "3d-view-master-logo",
