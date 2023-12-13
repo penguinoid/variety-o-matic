@@ -119,6 +119,7 @@
 
     function ClearFilters(){
         filters = [];
+        $('button.filter').removeClass('selected');
         $('div.variety').each(function() {
             $(this).show();
         });
