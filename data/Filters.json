@@ -1,42 +1,43 @@
 [
   {
     "Group": "Lines by centre hole",
+    "Help": "The number of lines of text next to the centre hole.",
     "Filters": [
       {
         "Code": "no-lines-left",
         "DisplayName": "no lines left"
       },
       {
-        "Code": "1-line-left",
-        "DisplayName": "1 line left"
-      },
-      {
-        "Code": "2-lines-left",
-        "DisplayName": "2 lines left"
-      },
-      {
-        "Code": "3-lines-left",
-        "DisplayName": "3 lines left"
-      },
-      {
-        "Code": "4-lines-left",
-        "DisplayName": "4 lines left"
-      },
-      {
         "Code": "no-lines-right",
         "DisplayName": "no lines right"
+      },
+      {
+        "Code": "1-line-left",
+        "DisplayName": "1 line left"
       },
       {
         "Code": "1-line-right",
         "DisplayName": "1 line right"
       },
       {
+        "Code": "2-lines-left",
+        "DisplayName": "2 lines left"
+      },
+      {
         "Code": "2-lines-right",
         "DisplayName": "2 lines right"
       },
       {
+        "Code": "3-lines-left",
+        "DisplayName": "3 lines left"
+      },
+      {
         "Code": "3-lines-right",
         "DisplayName": "3 lines right"
+      },
+      {
+        "Code": "4-lines-left",
+        "DisplayName": "4 lines left"
       },
       {
         "Code": "4-lines-right",
@@ -72,6 +73,7 @@
   },
   {
     "Group": "Company and location",
+    "Help": "Filters if these words appear anywhere apart from the title. gaf includes GAF. Use the most exact visible eg if a reel has Sawyers Inc then pick that filter instead of Sawyers.",
     "Filters": [
       {
         "Code": "sawyers",
