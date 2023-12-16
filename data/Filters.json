@@ -5,43 +5,53 @@
     "Filters": [
       {
         "Code": "no-lines-left",
-        "DisplayName": "no lines left"
+        "DisplayName": "no lines left",
+        "Toggle": "1-line-left,2-lines-left,3-lines-left,4-lines-left"
       },
       {
         "Code": "no-lines-right",
-        "DisplayName": "no lines right"
+        "DisplayName": "no lines right",
+        "Toggle": "1-line-right,2-lines-right,3-lines-right,4-lines-right"
       },
       {
         "Code": "1-line-left",
-        "DisplayName": "1 line left"
+        "DisplayName": "1 line left",
+        "Toggle": "no-lines-left,2-lines-left,3-lines-left,4-lines-left"
       },
       {
         "Code": "1-line-right",
-        "DisplayName": "1 line right"
+        "DisplayName": "1 line right",
+        "Toggle": "no-lines-right,2-lines-right,3-lines-right,4-lines-right"
       },
       {
         "Code": "2-lines-left",
-        "DisplayName": "2 lines left"
+        "DisplayName": "2 lines left",
+        "Toggle": "no-lines-left,1-line-left,3-lines-left,4-lines-left"
       },
       {
         "Code": "2-lines-right",
-        "DisplayName": "2 lines right"
+        "DisplayName": "2 lines right",
+        "Toggle": "no-lines-right,1-line-right,3-lines-right,4-lines-right"
       },
       {
         "Code": "3-lines-left",
-        "DisplayName": "3 lines left"
+        "DisplayName": "3 lines left",
+        "Toggle": "no-lines-left,1-line-left,2-lines-left,4-lines-left"
       },
       {
         "Code": "3-lines-right",
-        "DisplayName": "3 lines right"
+        "DisplayName": "3 lines right",
+        "Toggle": "no-lines-right,1-line-right,2-lines-right,4-lines-right"
       },
       {
         "Code": "4-lines-left",
-        "DisplayName": "4 lines left"
+        "DisplayName": "4 lines left",
+        "Toggle": "no-lines-left,1-line-left,2-lines-left,3-lines-left"
       },
       {
         "Code": "4-lines-right",
-        "DisplayName": "4 lines right"
+        "DisplayName": "4 lines right",
+        "Toggle": "no-lines-right,1-line-right,2-lines-right,3-lines-right"
       }
     ]
   },
@@ -50,11 +60,13 @@
     "Filters": [
       {
         "Code": "hand-lettered",
-        "DisplayName": "hand-lettered"
+        "DisplayName": "hand-lettered",
+        "Toggle": "typeset"
       },
       {
         "Code": "typeset",
-        "DisplayName": "typeset"
+        "DisplayName": "typeset",
+        "Toggle": "hand-lettered"
       }
     ]
   },
@@ -63,11 +75,13 @@
     "Filters": [
       {
         "Code": "reel-number-at-top",
-        "DisplayName": "reel number at top"
+        "DisplayName": "reel number at top",
+        "Toggle": "reel-number-at-bottom"
       },
       {
         "Code": "reel-number-at-bottom",
-        "DisplayName": "reel number at bottom"
+        "DisplayName": "reel number at bottom",
+        "Toggle": "reel-number-at-top"
       }
     ]
   },
@@ -108,6 +122,10 @@
         "DisplayName": "Portland 7 Oregon"
       },
       {
+        "Code": "portland-7-ore",
+        "DisplayName": "Portland 7 Ore"
+      },
+      {
         "Code": "portland-oregon",
         "DisplayName": "Portland Oregon"
       },
@@ -123,31 +141,38 @@
   },
   {
     "Group": "Made in...",
+    "Help": "Use these if the reels explicitly say they're made there.",
     "Filters": [
       {
         "Code": "made-in-usa",
-        "DisplayName": "made in USA"
+        "DisplayName": "made in USA",
+        "Toggle": "made-in-belgium,made-in-australia,made-in-france,made-in-india"
       },
       {
         "Code": "made-in-belgium",
-        "DisplayName": "made in Belgium"
+        "DisplayName": "made in Belgium",
+        "Toggle": "made-in-usa,made-in-australia,made-in-france,made-in-india"
       },
       {
         "Code": "made-in-australia",
-        "DisplayName": "made in Australia"
+        "DisplayName": "made in Australia",
+        "Toggle": "made-in-usa,made-in-belgium,made-in-france,made-in-india"
       },
       {
         "Code": "made-in-france",
-        "DisplayName": "made in France"
+        "DisplayName": "made in France",
+        "Toggle": "made-in-usa,made-in-belgium,made-in-australia,made-in-india"
       },
       {
         "Code": "made-in-india",
-        "DisplayName": "made in India"
+        "DisplayName": "made in India",
+        "Toggle": "made-in-usa,made-in-belgium,made-in-australia,made-in-france"
       }
     ]
   },
   {
     "Group": "View-Master",
+    "Help": "Branding variations. The 3D logo is the bas-relief one.",
     "Filters": [
       {
         "Code": "view-master",
@@ -173,18 +198,22 @@
   },
   {
     "Group": "Date and copyright",
+    "Help": "Includes a filter for where no date is present. Date excludes dates in the reel's title. Copyright text means the word copyright appears, as apposed to the © symbol, although both could be present. By line indicates the reels state it is by a person or company. Company name indicates a company other than Sawyers, gaf et al is credited.",
     "Filters": [
       {
         "Code": "no-date",
-        "DisplayName": "no date"
+        "DisplayName": "no date",
+        "Toggle": "single-date,multiple-dates"
       },
       {
-        "Code": "date",
-        "DisplayName": "date"
+        "Code": "single-date",
+        "DisplayName": "single date",
+        "Toggle": "no-date,multiple-dates"
       },
       {
         "Code": "multiple-dates",
-        "DisplayName": "multiple dates"
+        "DisplayName": "multiple dates",
+        "Toggle": "no-date,single-date"
       },
       {
         "Code": "date-roman",
@@ -203,10 +232,6 @@
         "DisplayName": "by line"
       },
       {
-        "Code": "all-rights-reserved",
-        "DisplayName": "all rights reserved"
-      },
-      {
         "Code": "reserved",
         "DisplayName": "reserved"
       },
@@ -221,28 +246,34 @@
     "Filters": [
       {
         "Code": "preview-reel",
-        "DisplayName": "preview reel"
+        "DisplayName": "preview reel",
+        "Toggle": "study-reel,test-reel,proof-reel,personal-reel"
       },
       {
         "Code": "study-reel",
-        "DisplayName": "study reel"
+        "DisplayName": "study reel",
+        "Toggle": "preview-reel,test-reel,proof-reel,personal-reel"
       },
       {
         "Code": "test-reel",
-        "DisplayName": "test reel"
+        "DisplayName": "test reel",
+        "Toggle": "preview-reel,study-reel,proof-reel,personal-reel"
       },
       {
         "Code": "proof-reel",
-        "DisplayName": "proof reel"
+        "DisplayName": "proof reel",
+        "Toggle": "preview-reel,study-reel,test-reel,personal-reel"
       },
       {
         "Code": "personal-reel",
-        "DisplayName": "personal reel"
+        "DisplayName": "personal reel",
+        "Toggle": "preview-reel,study-reel,test-reel,proof-reel"
       }
     ]
   },
   {
     "Group": "Misc",
+    "Help": "Heptagon indicates the reel has a heptagon printed around the central region.",
     "Filters": [
       {
         "Code": "non-stereo",
